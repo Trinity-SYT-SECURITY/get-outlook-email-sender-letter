@@ -1,1 +1,15 @@
-# get-outlook-email-sender-letter
+#### 因為郵件太多太雜，用這程式可以只找出郵件內的特定發信者的信件，並輸入你想看到在幾天內的信件，最後會輸出找到的郵件附件到outputeven的資料夾中，並將郵件內容打印到output.txt內
+
+Note! The web version of outlook is not applicable, please install the desktop version and log in to run the program
+
+如果程式無法運行，很可能是因為原本的outlook是登出狀態，請記得先行登入
+
+用 Python 寫一個可以分類郵件來源的程式，可以考慮以下幾個步驟：
+
++ 先確定您想使用哪些資料來分類郵件來源。可以考慮使用郵件的標題、內容、寄件人地址等資料。
++ 使用 Python 的第三方函式庫（如 imaplib 或 poplib）獲取您的郵件。這些函式庫可以幫助您從郵件伺服器上收取郵件。
++ 將獲取的郵件資料轉換成可供分析的格式。可以使用 Python 的內建函式庫 email 來解析郵件資料。
++ 使用分類器對郵件進行分類。可以使用 Python 中的机器學習函式庫（如 scikit-learn）來訓練一個分類器。您也可以使用自然語言處理技術（如文本分類）對郵件進行分類。
++ 測試您的分類器並進行改進。可以使用郵件標記為已讀取或未讀取，並使用已讀取的郵件來評估您的分類器的效果。根據測試結果，可以進行必要的改進。
+
+此程式目前只能針對一個帳戶
