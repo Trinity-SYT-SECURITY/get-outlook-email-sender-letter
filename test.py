@@ -28,7 +28,7 @@ def outlook_mail():
     mailss = mails.Restrict("[SenderEmailAddress] = '" + send + "'")
     # mails = mails.Restrict("[UnRead] = 'True'")過濾未讀取郵件
     print(len(mailss))
-    outputDir = r"C:\\Users\\user\\Desktop\\郵件分類器\\outputeven"
+    outputDir = r"C:\\outputfile" #要改成你想要把郵件中的附件輸出到什麼目錄底下，這裡不能用相對路徑!!
     try:
         for message in list(mailss):
             try:
