@@ -1,4 +1,4 @@
-﻿# import win32com.client  # 讀取郵件模塊
+# import win32com.client  # 讀取郵件模塊
 from win32com.client.gencache import EnsureDispatch as DispatchEx
 import tkinter as tk
 import os
@@ -28,7 +28,7 @@ def outlook_mail():
     mailss = mails.Restrict("[SenderEmailAddress] = '" + send + "'")
     # mails = mails.Restrict("[UnRead] = 'True'")過濾未讀取郵件
     print(len(mailss))
-    outputDir = r"C:\\outputfile" #要改成你想要把郵件中的附件輸出到什麼目錄底下，這裡不能用相對路徑!!
+
     try:
         for message in list(mailss):
             try:
@@ -42,7 +42,7 @@ def outlook_mail():
                     print(f"attachment {attachment.FileName} from {s} saved")
 
                 fi = open("output.txt", "a")
-                print("attachment {attachment.FileName} from {s} saved \n")
+                fi.truncate()
                 fi.writelines(b+"\n"+("=="*50))
                 print("==" * 50)
                 fi.close()
@@ -74,7 +74,8 @@ if __name__ == '__main__':
 
     #
     """outputDir = input("你想將檔案儲存在哪個目錄下?請輸入目錄路徑!! (EX: C:\\test\) : ").strip()
-    print(outputDir)
+    print(outputDir)"""
+    outputDir = r"C:\\Users\\user\\Desktop\\郵件分類器\\outputeven"
     user = input("這邊會刪除剛輸入的目錄下所有檔案，如果不要請輸入 n 如果需要輸入 y :").strip()
     # 這樣搞是因為，每次執行程式若把郵件輸出到相同的目錄下，就會堆疊太多紀錄，如果沒需要這功能，可以把它刪掉
     if user == 'y':
@@ -85,7 +86,7 @@ if __name__ == '__main__':
             os.remove(file_path)
 
     elif user == 'n':
-        print("接下來你所新生成的檔案會在此目錄下，且會包含上一次生成的當案\n")"""
+        print("接下來你所新生成的檔案會在此目錄下，且會包含上一次生成的當案\n")
     outlook_mail()
 #output = input("輸入要將郵件內容輸出進去的txt檔案名稱 EX: output")
 #output = output+'.txt'
