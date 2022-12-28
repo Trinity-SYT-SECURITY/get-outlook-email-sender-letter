@@ -116,7 +116,7 @@ if __name__ == '__main__':
     print(outputDir)"""
 
     # 記得改成你要把郵件中的附件放到什麼目錄下，不要輸入相對路徑!!!
-    outputDir = r"C:\\Users\\user\\Desktop\\郵件分類器\\outputeven"
+    outputDir = r"C:\\outputeven"
     user = input("這邊會刪除剛輸入的目錄下所有檔案，如果不要請輸入 n 如果需要輸入 y :").strip()
     # 這樣搞是因為，每次執行程式若把郵件輸出到相同的目錄下，就會堆疊太多紀錄，如果沒需要這功能，可以把它刪掉
     if user == 'y':
