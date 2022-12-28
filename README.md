@@ -1,4 +1,6 @@
-#### 因為郵件太多太雜，用這程式可以只找出郵件內的特定發信者的信件，並輸入你想看到在幾天內的信件，最後會輸出找到的郵件附件到outputeven的資料夾中，並將郵件內容打印到output.txt內
+#### 因為郵件太多太雜，用這程式可以只找出郵件內的特定發信者的信件，並輸入你想看到在幾天內的信件，最後會輸出找到的郵件"附件"丟到outputeven的資料夾中，並將郵件內容打印到output.txt內
+
+**只適用outlook應用程式**
 
 Note! The web version of outlook is not applicable, please install the desktop version and log in to run the program
 
