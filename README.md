@@ -19,14 +19,24 @@ Note! The web version of outlook is not applicable, please install the desktop v
 
 >輸入你想收到的來源發信者的郵件地址:xxx@xx.com.tw 
 >幾天前? (這裡只能輸入數字): 1xx
->這邊會刪除剛輸入的目錄下所有檔案，如果不要請輸入 n 如果需要輸入 y :y
->郵件数量： 1xxx
->38
 
+>這邊會刪除剛輸入的目錄下所有檔案，如果不要請輸入 n 如果需要輸入 y :y #因為每次輸出都會造成郵件附件太多，如果不把上一次查詢的刪除，可能就會造成使用上的困擾，當然!你可以選擇不刪除!!
+>> 若輸入n，會輸出: 接下來你所新生成的檔案會在此目錄下，且會包含上一次生成的檔案
+
+>所有的郵件数量： 1xxx #你信箱中所有的郵件數量
+>根據天數及發件人所找到的郵件數量=> xx #依據你前面寫下的資訊後，程式找到了多少個符合這資訊的郵件
+
+>Do you want to delete the contents of the file (y/n)? y #這會刪除你原本txt文件中所存在的內容，輸入n是不刪除內容文字
+#.... 如果找到的結果超多，且初始文件內容不為空，那這個問題會在每一次找到下一個郵件時都會問你是否要繼續把郵件內容寫入txt中
+
+
+#有輸出附件的話這邊會顯示!!沒附件一樣會把郵件的內容資訊輸出到output.txt
 ====================================================================================================
-attachment 原始資料event-Vip910840272713.html from Mega Bank xx saved
-attachment 原始資料event-Vip910840272713.csv from Mega Bank xx saved
+attachment 原始資料event-xxxx.html from Mega Bank xx saved
+attachment 原始資料event-xxx.csv from Mega Bank xx saved
 ====================================================================================================
 ....
+
+
 
 ```
