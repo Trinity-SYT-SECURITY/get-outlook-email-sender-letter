@@ -65,7 +65,7 @@ if __name__ == '__main__':
             print('Invalid email address,please try again\n')
 
     while True:
-        dayy = input("幾天前? (這裡只能輸入數字)")
+        dayy = input("幾天前? (這裡只能輸入數字) : ") #會用天數做塞選，一天24小時，這邊都輸入1,2,3...不能用小時!
         if dayy.isdigit():
             break
         else:
@@ -86,7 +86,7 @@ if __name__ == '__main__':
             os.remove(file_path)
 
     elif user == 'n':
-        print("接下來你所新生成的檔案會在此目錄下，且會包含上一次生成的當案\n")
+        print("接下來你所新生成的檔案會在此目錄下，且會包含上一次生成的檔案\n")
     outlook_mail()
 #output = input("輸入要將郵件內容輸出進去的txt檔案名稱 EX: output")
 #output = output+'.txt'
